@@ -216,18 +216,6 @@ const RenderBlock = defineComponent({
   border-radius: 0.375rem;
 }
 
-.markdown-list {
-  list-style-type: disc;
-}
-
-ol.markdown-list {
-  list-style-type: decimal;
-}
-
-.markdown-list--loose {
-  gap: 0.5rem;
-}
-
 .markdown-hr {
   border-color: var(--border);
 }

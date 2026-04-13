@@ -164,6 +164,15 @@
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  list-style-type: disc;
+}
+
+.markdown-body ol {
+  list-style-type: decimal;
+}
+
+.markdown-body .markdown-list--loose {
+  gap: 0.5rem;
 }
 
 .markdown-body blockquote {

@@ -72,7 +72,6 @@ Vite dev-server プラグインがファイルシステムと R2 から直接 AP
 
 バリデーション:
 - 最大ファイルサイズ: 10MB
-- 1回のアップロード上限: 50 ファイル
 - 許可される拡張子: `.jpg`, `.jpeg`, `.png`, `.gif`, `.webp`, `.avif`
 
 ## Authentication

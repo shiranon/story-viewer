@@ -1,9 +1,6 @@
 <template>
   <figure class="message-image">
     <img :src="src" :alt="alt" :title="title ?? undefined" loading="lazy" decoding="async" />
-    <figcaption v-if="caption" class="message-image__caption">
-      {{ caption }}
-    </figcaption>
   </figure>
 </template>
 
@@ -41,11 +38,5 @@ withDefaults(defineProps<Props>(), {
   max-width: 100%;
   height: auto;
   border-radius: inherit;
-}
-
-.message-image__caption {
-  padding: 0.5rem 0.75rem;
-  font-size: 0.85em;
-  color: var(--muted-foreground);
 }
 </style>

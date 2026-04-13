@@ -13,7 +13,6 @@ import {
 } from './images-json'
 import { batchDeleteKeys, fetchAndStreamObject, listAllKeys } from './r2-operations'
 import {
-  MAX_FILE_COUNT,
   MAX_FILE_SIZE,
   sanitizePathSegment,
   validateImageFilename,
@@ -148,7 +147,7 @@ export async function handleUpload(
   const bb = (createBusboy as unknown as typeof Busboy)({
     headers: req.headers,
     defParamCharset: 'utf8',
-    limits: { fileSize: MAX_FILE_SIZE, files: MAX_FILE_COUNT },
+    limits: { fileSize: MAX_FILE_SIZE },
   })
 
   const uploadContext: UploadContext = {

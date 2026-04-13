@@ -24,7 +24,6 @@ export const SAFE_CONTENT_TYPES = new Set([
 ])
 
 export const MAX_FILE_SIZE = 10 * 1024 * 1024 // 10MB
-export const MAX_FILE_COUNT = 50
 
 export const safeContentType = (contentType: string | undefined): string =>
   contentType !== undefined && SAFE_CONTENT_TYPES.has(contentType)
